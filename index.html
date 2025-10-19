@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - FoxTimer</title>
+    <style>
+        :root {
+            --primary-color: #FF6B35;
+            --secondary-color: #004E89;
+            --accent-color: #00A6A6;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --border-color: #e1e5e9;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: white;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+            border-bottom: 3px solid var(--primary-color);
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo {
+            height: 50px;
+            margin-right: 15px;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+        }
+        
+        .app-name {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .tagline {
+            font-size: 16px;
+            color: var(--secondary-color);
+            font-weight: 500;
+        }
+        
+        .hero {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .hero h1 {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            font-size: 36px;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #555;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 78, 137, 0.3);
+        }
+        
+        .highlight-box h2 {
+            margin-bottom: 15px;
+            font-size: 26px;
+        }
+        
+        .policy-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            padding: 35px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+        
+        h2 {
+            color: var(--secondary-color);
+            margin: 30px 0 18px;
+            font-size: 24px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        h3 {
+            color: var(--primary-color);
+            margin: 20px 0 12px;
+            font-size: 20px;
+        }
+        
+        p {
+            margin-bottom: 18px;
+        }
+        
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 25px;
+            text-align: center;
+            background: #f0f5ff;
+            padding: 10px;
+            border-radius: 6px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #666;
+            font-size: 14px;
+            border-top: 1px solid var(--border-color);
+            margin-top: 40px;
+            background: white;
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, #f0f7ff, #e6f3ff);
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            padding: 25px;
+            margin-top: 30px;
+            border-left: 5px solid var(--accent-color);
+        }
+        
+        .contact-info h3 {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        
+        .email-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        
+        .email-link:hover {
+            text-decoration: underline;
+        }
+        
+        .feature-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 25px 0;
+        }
+        
+        .feature {
+            flex-basis: 48%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .feature h4 {
+            color: var(--secondary-color);
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo-container {
+                margin-bottom: 10px;
+            }
+            
+            .policy-card {
+                padding: 25px;
+            }
+            
+            .feature {
+                flex-basis: 100%;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="logo.png" alt="FoxTimer Logo" class="logo">
+                <div>
+                    <div class="app-name">FoxTimer</div>
+                    <div class="tagline">Focus. Track. Succeed.</div>
+                </div>
+            </div>
+            <div>Privacy Policy</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="hero">
+            <h1>FoxTimer Privacy Policy</h1>
+            <p>Your focus and productivity timer that respects your privacy</p>
+        </div>
+        
+        <div class="highlight-box">
+            <h2>Your Data Stays on Your Device</h2>
+            <p>FoxTimer is designed with privacy as a core principle. We don't collect, store, or transmit any of your personal data.</p>
+        </div>
+        
+        <div class="policy-card">
+            <h1>Privacy Policy for FoxTimer</h1>
+            <p class="last-updated">Last Updated: September 3, 2025</p>
+            
+            <h2>1. Introduction</h2>
+            <p>Welcome to FoxTimer, a focus timer application that helps you track study sessions, breaks, and improve productivity. FoxTimer operates with a fundamental privacy-first approach: <strong>all your data remains exclusively on your device</strong>.</p>
+            
+            <h2>2. Information We Collect</h2>
+            <p><strong>No Personal Data Collection</strong></p>
+            <p>FoxTimer does not collect, store, or transmit any personal information. All data created within the app—including timer settings, focus sessions, break tracking, and preferences—resides solely on your device.</p>
+            
+            <h3>Local-Only Data</h3>
+            <p>The following information is stored locally on your device and never leaves it:</p>
+            <ul style="margin-left: 25px; margin-bottom: 20px;">
+                <li>Timer settings and configurations</li>
+                <li>Focus session history and statistics</li>
+                <li>Break tracking data</li>
+                <li>Theme preferences and clock font selections</li>
+                <li>Focus mode settings</li>
+            </ul>
+            
+            <h2>3. How We Use Your Information</h2>
+            <p>Since we don't collect any data, there is no usage of personal information. All functionality happens locally on your device:</p>
+            <ul style="margin-left: 25px; margin-bottom: 20px;">
+                <li>Tracking focus sessions and breaks</li>
+                <li>Displaying productivity statistics</li>
+                <li>Applying your selected themes and fonts</li>
+                <li>Enabling focus mode functionality</li>
+            </ul>
+            
+            <h2>4. Data Storage and Security</h2>
+            <p>All your data is stored locally on your device using Android's secure local storage. We don't use external servers or cloud storage for any user data. The security of your data depends on your device's security measures.</p>
+            
+            <h2>5. Data Sharing and Disclosure</h2>
+            <p><strong>We Do Not Share Any Data</strong></p>
+            <p>FoxTimer does not share, sell, trade, or transmit any user data to third parties—because we don't collect any data in the first place. Your focus patterns and productivity statistics remain private on your device.</p>
+            
+            <h2>6. Your Rights</h2>
+            <p>You have complete control over your data:</p>
+            <ul style="margin-left: 25px; margin-bottom: 20px;">
+                <li>Access your data directly within the app</li>
+                <li>Modify or delete your data through the app's settings</li>
+                <li>Uninstall the app to remove all local data</li>
+            </ul>
+            
+            <h2>7. Third-Party Services</h2>
+            <p>FoxTimer does not integrate with any third-party services that would require data sharing. The app functions independently without external dependencies.</p>
+            
+            <h2>8. Changes to This Privacy Policy</h2>
+            <p>If we update this privacy policy in the future, we will post the changes within the app and update the "Last Updated" date. We recommend reviewing this policy periodically.</p>
+            
+            <div class="contact-info">
+                <h3>9. Contact Us</h3>
+                <p>If you have any questions about this Privacy Policy or FoxTimer's privacy practices, please contact us at:</p>
+                <p><strong>Email:</strong> <a href="mailto:vendvl.0@gmail.com" class="email-link">vendvl.0@gmail.com</a></p>
+            </div>
+        </div>
+        
+        <div class="policy-card">
+            <h2>App Features</h2>
+            <div class="feature-list">
+                <div class="feature">
+                    <h4>Focus Timer</h4>
+                    <p>Set dedicated focus sessions with customizable durations to maximize productivity.</p>
+                </div>
+                <div class="feature">
+                    <h4>Break Tracking</h4>
+                    <p>Monitor your break times to maintain healthy work-rest balance.</p>
+                </div>
+                <div class="feature">
+                    <h4>Study Analytics</h4>
+                    <p>View your study patterns and productivity trends—all stored locally on your device.</p>
+                </div>
+                <div class="feature">
+                    <h4>Customizable Themes</h4>
+                    <p>Personalize your timer with various themes and clock font options.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 FoxTimer. All rights reserved. | Your Privacy is Our Priority</p>
+        </div>
+    </footer>
+</body>
+</html>
